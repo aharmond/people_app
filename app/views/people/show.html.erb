@@ -1,6 +1,8 @@
 <h1><%= @person.full_name %></h1>
-<h5><%= @person.age %></h5>
-<h5><%= @person.gender %></h5>
-<h5><%= @person.hair_color %></h5>
-<h5><%= @person.eye_color %></h5>
+<h5>Age: <%= @person.age %></h5>
+<h5>Gender: <%= @person.gender %></h5>
+<h5>Hair Color: <%= @person.hair_color %></h5>
+<h5>Eye Color: <%= @person.eye_color %></h5>
+<%= link_to 'Edit Person', edit_person_path %>
+<%= link_to 'Delete Person', @person.itself, method: :delete %>
 <%= link_to 'Back', people_path %>
