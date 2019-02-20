@@ -12,10 +12,10 @@
   <%= f.text_field :gender %>
 
   <%= f.label :hair_color %>
-  <%= f.text_field :hair_color %>
+  <%= f.select :hair_color, ['Brown', 'Black', 'Red', 'Blonde', 'Other'] %>
 
   <%= f.label :eye_color %>
-  <%= f.text_field :eye_color %>
+  <%= f.select :eye_color, ['Brown', 'Gray', 'Blue', 'Green', 'Hazel', 'Other'] %>
 
   <%= f.submit %>
 <% end %>
