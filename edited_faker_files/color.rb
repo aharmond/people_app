@@ -19,6 +19,10 @@ module Faker
         fetch('color.eye')
       end
 
+      def dog_color
+        fetch('color.dog')
+      end
+
       def single_rgb_color
         sample((0..255).to_a)
       end

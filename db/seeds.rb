@@ -22,3 +22,12 @@
   person.eye_color = Faker::Color.eye_color
   person.save!
 end
+
+15.times do
+  dog = Dog.new
+  dog.name = Faker::Creature::Dog.name
+  dog.age = Faker::Number.between(2, 13)
+  dog.breed = Faker::Creature::Dog.breed
+  dog.color = Faker::Color.dog_color
+  dog.save!
+end
